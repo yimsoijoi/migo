@@ -100,8 +100,8 @@ SELECT
         WHEN c.data_type = 'bigint' THEN '178932456'
         WHEN c.data_type = 'numeric' AND c.numeric_scale = 2 THEN '1789.32'
         WHEN c.data_type = 'numeric' AND c.numeric_scale = 3 THEN '1789.324'
-        WHEN c.column_name = 'sap_material_code' THEN 'FLTX002FSC100, USSR001 etc.'
-        WHEN c.column_name = 'plant_code' THEN '1001, 1150 etc.'
+        WHEN c.column_name = 'name' THEN 'John'
+        WHEN c.column_name = 'last_name' THEN 'Doe'
         WHEN ev.enum_value IS NOT NULL THEN ev.enum_value
         ELSE ''
         END AS example_value,
