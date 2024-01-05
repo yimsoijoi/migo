@@ -15,11 +15,11 @@ func main() {
 			- (xlsx styling)
 
 	*/
-	dbName := "kuy_svc"
+	dbName := "db-name"
 	db, err := svc.ConnectDB(
-		"hee-db.com",
+		"my-db.com",
 		"db-user",
-		"soi-jae-jae",
+		"db-password",
 		dbName,
 	)
 	if err != nil {
